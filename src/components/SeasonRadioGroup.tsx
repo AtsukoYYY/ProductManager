@@ -1,4 +1,3 @@
-import { VFC } from "react";
 import Radio from "@mui/material/Radio";
 import RadioGroup from "@mui/material/RadioGroup";
 import FormControlLabel from "@mui/material/FormControlLabel";
@@ -19,8 +18,9 @@ export const SeasonRadioGroup = (props: any) => {
         name="radio-buttons-group"
         onChange={onChangeRadio}
       >
-        <FormControlLabel value="SS" control={<Radio />} label="SS" />
-        <FormControlLabel value="AW" control={<Radio />} label="AW" />
+        <FormControlLabel value="SS" control={<Radio />} label="春夏" />
+        <FormControlLabel value="AW" control={<Radio />} label="秋冬" />
+        <FormControlLabel value="ALL" control={<Radio />} label="ALL" />
       </RadioGroup>
     </FormControl>
   );
